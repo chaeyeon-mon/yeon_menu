@@ -1,0 +1,136 @@
+.header-wrapper {
+  position: relative;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  margin-left: -19rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 8rem;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-item {
+  padding: 1rem 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-right: -19rem;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* --- 메가 메뉴 스타일 --- */
+.mega-menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(5px);
+  border-top: 1px solid #f0f0f0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, visibility 0s 0.3s, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.mega-menu-container.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, visibility 0s 0s, transform 0.3s ease;
+}
+
+.mega-menu-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.mega-menu-columns {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  max-width: 1200px;       /* nav-menu와 동일 */
+  margin: 0 auto;          /* 중앙 정렬 */
+  padding: 0 1rem;         /* 필요시 좌우 여백 */
+}
+
+.mega-menu-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-menu-category {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.mega-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mega-menu-list-item {
+  margin-bottom: 1rem;
+}
+
+.mega-menu-link {
+  color: #555;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.mega-menu-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
